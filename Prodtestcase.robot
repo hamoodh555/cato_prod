@@ -26,11 +26,11 @@ Admin login
     SeleniumLibrary.Go to    ${url} 
 
     SeleniumLibrary.Wait Until Element Is Enabled    //div[@class='login-footertxt']/p    40s
-    SeleniumLibrary.Input Text    id=form_username    
-    SeleniumLibrary.Input Text    id=form_password    
+    SeleniumLibrary.Input Text    id=form_username    admins
+    SeleniumLibrary.Input Text    id=form_password    CVMadmin@2020 
     SeleniumLibrary.Click Button    id=form_login
     Sleep    30s
-	SeleniumLibrary.Wait Until Page Contains Element	xpath=.//span[@class='logo replacea']	10s
+    SeleniumLibrary.Wait Until Page Contains Element	xpath=.//span[@class='logo replacea']	10s
     SeleniumLibrary.Close Browser
 
 Creator login
@@ -45,8 +45,8 @@ Creator login
     SeleniumLibrary.Go to    ${url} 
 
     SeleniumLibrary.Wait Until Element Is Enabled    //div[@class='login-footertxt']/p    40s
-    SeleniumLibrary.Input Text    id=form_username    
-    SeleniumLibrary.Input Text    id=form_password    
+    SeleniumLibrary.Input Text    id=form_username    cvmcreator
+    SeleniumLibrary.Input Text    id=form_password    CVMdemo@2019  
     SeleniumLibrary.Click Button    id=form_login
     Sleep    30s
 	SeleniumLibrary.Wait Until Page Contains Element	xpath=.//span[@class='logo replacea']	10s
@@ -64,8 +64,8 @@ Reviewer login
     SeleniumLibrary.Go to    ${url} 
 
     SeleniumLibrary.Wait Until Element Is Enabled    //div[@class='login-footertxt']/p    40s
-    SeleniumLibrary.Input Text    id=form_username    
-    SeleniumLibrary.Input Text    id=form_password    
+    SeleniumLibrary.Input Text    id=form_username    reviewers
+    SeleniumLibrary.Input Text    id=form_password    CVMreviewer@2020 
     SeleniumLibrary.Click Button    id=form_login
     Sleep    30s
 	SeleniumLibrary.Wait Until Page Contains Element	xpath=.//span[@class='logo replacea']	10s
@@ -83,8 +83,8 @@ AdminCreator login
     SeleniumLibrary.Go to    ${url} 
 
     SeleniumLibrary.Wait Until Element Is Enabled    //div[@class='login-footertxt']/p    40s
-    SeleniumLibrary.Input Text    id=form_username    
-    SeleniumLibrary.Input Text    id=form_password    
+    SeleniumLibrary.Input Text    id=form_username    cadmin
+    SeleniumLibrary.Input Text    id=form_password    Cadmin@2020   
     SeleniumLibrary.Click Button    id=form_login
     Sleep    30s
 	SeleniumLibrary.Wait Until Page Contains Element	xpath=.//span[@class='logo replacea']	10s
@@ -102,8 +102,8 @@ Complainceshead login
     SeleniumLibrary.Go to    ${url} 
 
     SeleniumLibrary.Wait Until Element Is Enabled    //div[@class='login-footertxt']/p    40s
-    SeleniumLibrary.Input Text    id=form_username    
-    SeleniumLibrary.Input Text    id=form_password    
+    SeleniumLibrary.Input Text    id=form_username    compliancehead
+    SeleniumLibrary.Input Text    id=form_password    compliancehead   
     SeleniumLibrary.Click Button    id=form_login
     Sleep    30s
 	SeleniumLibrary.Wait Until Page Contains Element	xpath=.//span[@class='logo replacea']	10s
@@ -121,11 +121,11 @@ Creatorhead login
     SeleniumLibrary.Go to    ${url} 
 
     SeleniumLibrary.Wait Until Element Is Enabled    //div[@class='login-footertxt']/p    40s
-    SeleniumLibrary.Input Text    id=form_username    
-    SeleniumLibrary.Input Text    id=form_password    
+    SeleniumLibrary.Input Text    id=form_username    creatorhead    
+    SeleniumLibrary.Input Text    id=form_password    creatorhead
     SeleniumLibrary.Click Button    id=form_login
     Sleep    30s
-	SeleniumLibrary.Wait Until Page Contains Element	xpath=.//span[@class='logo replacea']	10s
+    SeleniumLibrary.Wait Until Page Contains Element	xpath=.//span[@class='logo replacea']	10s
     SeleniumLibrary.Close Browser
     
 To create a new campaign by manual flow	
@@ -137,11 +137,11 @@ To create a new campaign by manual flow
 
 
     SeleniumLibrary.Create WebDriver  Chrome  chrome_options=${chrome_options}
-	SeleniumLibrary.Set Window Size    1920    1080
+    SeleniumLibrary.Set Window Size    1920    1080
     SeleniumLibrary.Go to    ${url} 
     SeleniumLibrary.Wait Until Element Is Enabled    //div[@class='login-footertxt']/p    40s
-    SeleniumLibrary.Input Text    id=form_username    
-    SeleniumLibrary.Input Text    id=form_password    
+    SeleniumLibrary.Input Text    id=form_username    cvmcreator    
+    SeleniumLibrary.Input Text    id=form_password    CVMdemo@2019    
     SeleniumLibrary.Click Button    id=form_login
     Sleep    20s
     SeleniumLibrary.Wait Until Element Is Enabled    xpath=.//li[@ng-click='createNewProgram()']    60s
